@@ -1,0 +1,82 @@
+-----------Basic Command------------
+//For initialize reposetory
+git init
+
+//For Staging
+git add .
+
+//Set username and password for all project
+git config --global user.name ""
+git config --global user.email ""
+
+//For commit
+git commit -m "first commit"
+
+//push an existing repository from the command line
+git remote add origin https://github.com/arif-storerepublic/test.git
+git push -u origin master
+
+------------Additional Command------------
+//For Status
+git status
+
+//For Clear Secreen
+clear
+
+//For log
+git log
+
+//Create Branch
+git branch branchName
+
+//Show branch
+git branch
+
+//Move to another branch
+git checkout branchName
+
+//Create Branch and Move branch
+git checkout -b branchName
+
+//For marge 
+git marge name_of_branch_I_want_to_marge
+
+//For delete branch
+git branch -D name_of_branch_I_want_to_Delete
+
+//Shifting code to temporary file
+git stash
+
+//Move code to previous file
+git stash pop
+or
+git stash apply
+
+// For stash list
+git stash list
+
+//For moving specific file
+git stash pop Idname
+
+//For delete file
+git clean -f -n (For comfirmation)
+git clean -f
+
+---------Set Public Key-----------
+
+//Generating public
+ssh-keygen -t rsa -b 4096 -C "arif.storerepublic@gmail.com"
+
+//for Agent id
+eval $(ssh-agent -s)
+
+//For Add id
+ssh-add ~/.ssh/id_rsa
+
+//For Copy SSH key
+clip < ~/.ssh/id_rsa.pub
+
+Now Add SSH key in your GitHub Account
+
+//Connect Repository to the GitHub
+git remote add origin https://github.com/arif-storerepublic/abc.git
