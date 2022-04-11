@@ -16,6 +16,9 @@ git commit -m "first commit"
 git remote add origin https://github.com/arif-storerepublic/test.git
 git push -u origin master
 
+---- How to recover deleted File 
+If you have deleted multiple files locally but not committed, you can force checkout
+$ git checkout -f HEAD
 ------------Additional Command------------
 //For Status
 git status
