@@ -1,4 +1,4 @@
------------Basic Command------------
+-----------Basic Commands------------
 //For initialize reposetory
 git init
 
